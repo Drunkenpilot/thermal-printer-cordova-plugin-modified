@@ -127,4 +127,22 @@ module.exports = {
   bitmapToHexadecimalString: function(data, successCallback, errorCallback) {
     cordova.exec(successCallback, errorCallback, 'ThermalPrinter', 'bitmapToHexadecimalString', [data]);
   },
+
+  
+
+  /**
+   * Convert Drawable instance to a hexadecimal string of the image data
+   *
+   * @param {Object[]} data - Data object
+   * @param {"bluetooth"|"tcp"|"usb"} data.type - List all bluetooth or usb printers
+   * @param {string|number} [data.id] - ID of printer to find (Bluetooth: address, TCP: Use address + port instead, USB: deviceId)
+   * @param {string} [data.address] - If type is "tcp" then the IP Address of the printer
+   * @param {number} [data.port] - If type is "tcp" then the Port of the printer
+   * @param {string} data.base64 - Base64 encoded picture string to convert
+   * @param {function} successCallback - Result on success
+   * @param {function} errorCallback - Result on failure
+   */
+  bitmapToHexadecimalStringLarge: function (data, successCallback, errorCallback) {
+    cordova.exec(successCallback, errorCallback, 'ThermalPrinter', 'bitmapToHexadecimalStringLarge', [data]);
+  },
 };
