@@ -255,3 +255,21 @@ Convert Drawable instance to a hexadecimal string of the image data
 | data.base64 | <code>string</code> | Base64 encoded picture string to convert |
 | successCallback | <code>function</code> | Result on success |
 | errorCallback | <code>function</code> | Result on failure |
+
+### bitmapToHexadecimalStringLarge(data, successCallback, errorCallback)
+Convert Drawable instance to a hexadecimal string of the large image data
+
+| Param | Type | Description |
+| --- | --- | --- |
+| data | <code>Array.&lt;Object&gt;</code> | Data object |
+| data.type | <code>&quot;bluetooth&quot;</code> \| <code>&quot;tcp&quot;</code> \| <code>&quot;usb&quot;</code> | List all bluetooth or usb printers |
+| [data.id] | <code>string</code> \| <code>number</code> | ID of printer to find (Bluetooth: address, TCP: Use address + port instead, USB: deviceId) |
+| [data.address] | <code>string</code> | If type is "tcp" then the IP Address of the printer |
+| [data.port] | <code>number</code> | If type is "tcp" then the Port of the printer |
+| [data.mmFeedPaper] | <code>number</code><code>optional</code> | Millimeter distance feed paper at the end |
+| [data.dotsFeedPaper] | <code>number</code><code>optional</code> | Distance feed paper at the end |
+| [data.printerDpi] | <code>number</code><code>optional</code> | Printer DPI |
+| [data.printerWidthMM] | <code>number</code><code>optional</code> | Paper Width in mm |
+| data.base64 | <code>string</code> | Base64 encoded picture string to convert |
+| successCallback | <code>function</code> | Result on success |
+| errorCallback | <code>function</code> | Result on failure |
