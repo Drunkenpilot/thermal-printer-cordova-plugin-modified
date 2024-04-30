@@ -4,7 +4,8 @@
 ---
 
 This plugin is a wrapper for the [Android library for ESC/POS Thermal Printer](https://github.com/DantSu/ESCPOS-ThermalPrinter-Android).
-
+Forked from [paystory-de/thermal-printer-cordova-plugin ](https://github.com/paystory-de/thermal-printer-cordova-plugin)
+Added a method bitmapToHexadecimalStringLarge for large image.
 ### Install
 
 #### Cordova
